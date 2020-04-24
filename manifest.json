@@ -1,0 +1,18 @@
+{
+  "name": "Handled Start Page",
+  "version": "1.0.0",
+  "manifest_version": 2,
+  "description": "Customizable 'New Tab' page for teams at Handled.",
+  "icons": {
+    "16": "assets/favicon/favicon-16x16.png",
+    "48": "assets/favicon/favicon-32x32.png",
+    "128": "assets/favicon/favicon-96x96.png"
+  },
+  "chrome_url_overrides": {
+    "newtab": "index.html"
+  },
+  "incognito": "split",
+  "permissions": [
+    "chrome://favicon/"
+  ]
+}
