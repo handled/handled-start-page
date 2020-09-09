@@ -1,189 +1,211 @@
 @font-face {
-  font-family: Tiempos Semibold;
-  src: url("../assets/TiemposTextApp-Semibold-87a5252d38a3eee161ba797cc46fdab3.ttf");
+    font-family: Tiempos Semibold;
+    src: url("../assets/TiemposTextApp-Semibold-87a5252d38a3eee161ba797cc46fdab3.ttf");
 }
+
 body {
-  background-color: #c4eee0;
-  background-image: url("../assets/handled-background.png");
-  background-position: 0 100%;
-  background-repeat: no-repeat;
-  background-size: contain;
+    background-color: #c4eee0;
+    background-image: url("../assets/handled-background.png");
+    background-position: 0 100%;
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 
 /* Link section headers */
 h4 {
-  font-family: Tiempos Semibold,sans-serif;
-  font-weight: 600;
+    font-family: Tiempos Semibold, sans-serif;
+    font-weight: 600;
 }
 
 a {
-  color: rgb(15, 38, 44);
+    color: rgb(15, 38, 44);
 }
 
 .logo {
-  height: 24px;
-  width: 118px;
+    height: 24px;
+    width: 118px;
 }
 
 /* Date div */
 .date {
-  display: block;
-  font-size: 26px;
-  line-height: 26px;
-  text-align: center;
-  padding-top: 20px;
+    display: block;
+    font-size: 26px;
+    line-height: 26px;
+    text-align: center;
+    padding-top: 20px;
 }
 
 /* Clock div */
 .clock {
-  font-family: Tiempos Semibold,sans-serif;
-  display: block;
-  font-size: 60px;
-  line-height: 60px;
-  text-align: center;
-  padding-top: 20px;
+    font-family: Tiempos Semibold, sans-serif;
+    display: block;
+    font-size: 60px;
+    line-height: 60px;
+    text-align: center;
+    padding-top: 20px;
 }
 
 /* Search Input */
-#searchForm{
-  text-align: center;
+#searchForm {
+    text-align: center;
 }
 
 #searchForm i {
-  vertical-align: middle;
+    vertical-align: middle;
 }
 
 #searchForm .mdl-textfield__label {
-  color: rgba(232, 235, 225, 0.75);
+    color: rgba(232, 235, 225, 0.75);
 }
 
 #searchBox {
-  margin: 20px 0 20px 0;
+    margin: 20px 0 20px 0;
 }
 
 /* Links */
 .mdl-grid .mdl-cell a:link {
-  text-decoration: none;
+    text-decoration: none;
 }
 
 .mdl-grid .mdl-cell li:hover {
-  background-color: rgba(40, 92, 97, 0.8);
+    background-color: rgba(40, 92, 97, 0.8);
 }
 
 .mdl-grid .mdl-cell a:active {
-  text-decoration: underline;
+    text-decoration: underline;
 }
 
 /* Sidebar */
 .mdl-layout__drawer {
-  width: 350px !important;
-  -webkit-transform: translateX(-350px);
-  transform: translateX(-350px);
+    width: 350px !important;
+    -webkit-transform: translateX(-350px);
+    transform: translateX(-350px);
 }
 
 /* Snackbar notifications */
 .mdl-snackbar {
-  background-color: rgb(40, 92, 97);
-  color: rgba(255, 255, 255, 1);
-  text-align: center;
+    background-color: rgb(40, 92, 97);
+    color: rgba(255, 255, 255, 1);
+    text-align: center;
 }
 
 .mdl-snackbar__text {
-  text-align: center;
+    text-align: center;
 }
 
 /* Input boxes */
 .mdl-textfield {
-  width: 350px;
+    width: 350px;
 }
 
 /* Page grid */
 .mdl-grid {
-  max-width: 900px;
+    max-width: 900px;
 }
 
 .cell {
-  background-color: rgba(232, 235, 225, 0);
+    background-color: rgba(232, 235, 225, 0);
 }
 
 /* Link sections */
 .mdl-grid .mdl-cell {
-  box-sizing: border-box;
-  min-height: 200px;
-  padding: 0 10px 0 10px;
-  color: rgb(15, 38, 44);
+    box-sizing: border-box;
+    min-height: 120px;
+    padding: 0 10px 0 10px;
+    color: rgb(15, 38, 44);
 }
 
 .mdl-list__item {
-  padding: 5px;
-  min-height: 40px;
+    padding: 5px;
+    min-height: 40px;
 }
 
 /* Material Design Icon styles */
-.mdl-layout__drawer-button { color: rgba(40, 92, 97, 1); }
-.material-icons.md-18 { font-size: 18px; }
-.material-icons.md-24 { font-size: 24px; }
-.material-icons.md-36 { font-size: 36px; }
-.material-icons.md-48 { font-size: 48px; }
-.material-icons.md-light { color: rgba(255, 255, 255, 1); }
-.material-icons.md-dark { color: rgba(15, 38, 44, 1); }
+.mdl-layout__drawer-button {
+    color: rgba(40, 92, 97, 1);
+}
+
+.material-icons.md-18 {
+    font-size: 18px;
+}
+
+.material-icons.md-24 {
+    font-size: 24px;
+}
+
+.material-icons.md-36 {
+    font-size: 36px;
+}
+
+.material-icons.md-48 {
+    font-size: 48px;
+}
+
+.material-icons.md-light {
+    color: rgba(255, 255, 255, 1);
+}
+
+.material-icons.md-dark {
+    color: rgba(15, 38, 44, 1);
+}
+
 .mdl-list__item .mdl-list__item-icon {
     margin-right: 5px;
 }
 
 /* To Do List Help */
 #toDoListHelp {
-  padding: 0 0 5px 5px;
-  vertical-align: middle;
+    padding: 0 0 5px 5px;
+    vertical-align: middle;
 }
 
 #toDoListHelp i {
-  color: #333333;
+    color: #333333;
 }
 
 /* Add To Do */
-#addToDoForm{
-  padding: 0 5px 5px 5px;
+#addToDoForm {
+    padding: 0 5px 5px 5px;
 }
 
 #addTaskButton {
-  display: inline-block;
-  float: right;
-  text-align: right;
+    display: inline-block;
+    float: right;
+    text-align: right;
 }
 
 /* Delete To Do */
-.deleteToDo .material-icons{
-  display: inline-flex;
-  vertical-align: top;
-  margin-right: 5px;
+.deleteToDo .material-icons {
+    display: inline-flex;
+    vertical-align: top;
+    margin-right: 5px;
 }
 
 .deleteToDo {
-  line-height: 100%;
+    line-height: 100%;
 }
 
 .mdl-list__item:hover .removeTask {
-  display: block;
-  line-height: inherit;
-  background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 70%);
+    display: block;
+    line-height: inherit;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 70%);
 }
 
 .mdl-list__item .removeTask {
-  float: right;
-  position: absolute;
-  right: 0;
-	display: none;
+    float: right;
+    position: absolute;
+    right: 0;
+    display: none;
 }
 
 /* To Do List */
 #toDoList .mdl-list__item {
-  width: 320px;
+    width: 320px;
 }
 
 /* To Do List Complete */
 .completed {
-  text-decoration: line-through;
-  font-style: italic;
-  color: rgb(181, 84, 52);
+    text-decoration: line-through;
+    font-style: italic;
+    color: rgb(181, 84, 52);
 }

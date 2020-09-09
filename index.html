@@ -1,6 +1,6 @@
 <!DOCTYPE HTML>
 <html>
-  <head>
+<head>
     <link rel="stylesheet" href="css/material.min.css">
     <link rel="stylesheet" href="css/style.css">
     <script src="js/material.min.js"></script>
@@ -9,19 +9,19 @@
     <script src="js/jquery-3.5.0.slim.min.js"></script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <title>Start Page</title>
-    <link rel="icon" type="image/png" href="assets/favicon/favicon-32x32.png" sizes="32x32" />
-    <link rel="icon" type="image/png" href="assets/favicon/favicon-16x16.png" sizes="16x16" />
-    <link rel="icon" type="image/png" href="assets/favicon/favicon-96x96.png" sizes="96x96" />
-  </head>
-  <body>
-    <div class="mdl-layout mdl-js-layout mdl-layout">
-      <header class="mdl-layout__header--transparent">
+    <link rel="icon" type="image/png" href="assets/favicon/favicon-32x32.png" sizes="32x32"/>
+    <link rel="icon" type="image/png" href="assets/favicon/favicon-16x16.png" sizes="16x16"/>
+    <link rel="icon" type="image/png" href="assets/favicon/favicon-96x96.png" sizes="96x96"/>
+</head>
+<body>
+<div class="mdl-layout mdl-js-layout mdl-layout">
+    <header class="mdl-layout__header--transparent">
         <div class="mdl-layout__header-row">
-          <div class="mdl-layout-spacer"></div>
-          <img class="logo" src="assets/handled-logo.svg"/>
+            <div class="mdl-layout-spacer"></div>
+            <img class="logo" src="assets/handled-logo.svg"/>
         </div>
-      </header>
-      <div class="mdl-layout__drawer md-dark"> <!-- Start of Sidebar -->
+    </header>
+    <div class="mdl-layout__drawer md-dark"> <!-- Start of Sidebar -->
         <span class="mdl-layout-title" id="toDoListTitle">
           To Do List
           <div id="toDoListHelp" class="mdl-color-text--grey-400 icon material-icons">info</div>
@@ -36,140 +36,177 @@
         </span>
 
         <form id="addToDoForm">
-          <div class="mdl-textfield mdl-js-textfield">
-            <input class="mdl-textfield__input" type="text" id="addTaskInput" name="addTaskInput" autocomplete="off">
-            <label class="mdl-textfield__label" for="addTaskInput">Add A Task...</label>
-          </div>
-          <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored right" id="addTaskButton">
-            Add
-          </button>
+            <div class="mdl-textfield mdl-js-textfield">
+                <input class="mdl-textfield__input" type="text" id="addTaskInput" name="addTaskInput"
+                       autocomplete="off">
+                <label class="mdl-textfield__label" for="addTaskInput">Add A Task...</label>
+            </div>
+            <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored right" id="addTaskButton">
+                Add
+            </button>
         </form>
         <ul class="link-list-item mdl-list" id="toDoList">
-          <li class="mdl-list__item default">
-            You haven't added any tasks to your list yet. To get started, type a task in the input box above.
-          </li>
+            <li class="mdl-list__item default">
+                You haven't added any tasks to your list yet. To get started, type a task in the input box above.
+            </li>
         </ul>
-      </div><!-- End of Sidebar -->
-      <main class="mdl-layout__content">
+    </div><!-- End of Sidebar -->
+    <main class="mdl-layout__content">
         <div class="mdl-grid"><!-- Start of Date/Time/Search -->
-          <div class="mdl-cell mdl-cell--12-col">
-            <div id="date" class="date mdl-color-text--primary"></div>
-            <div id="clock" class="clock"></div>
-            <!-- Search bar can be enabled if desired. However, it is a little redundant
-            since the Chrome Extension behavior defaults to the Chrome navigation bar
-            for new tabs. -->
-            <!--<div id="searchBox">
-              <form action="https://google.com/search" id="searchForm">
-                <i class="material-icons md-24">search</i>
-                <div class="mdl-textfield mdl-js-textfield">
-                  <input class="mdl-textfield__input" type="text" id="search" name="q"
-                         autofocus="autofocus" autocomplete="off">
-                  <label class="mdl-textfield__label" for="search">Search Google...</label>
-                </div>
-              </form>
-            </div>-->
-          </div>
+            <div class="mdl-cell mdl-cell--12-col">
+                <div id="date" class="date mdl-color-text--primary"></div>
+                <div id="clock" class="clock"></div>
+                <!-- Search bar can be enabled if desired. However, it is a little redundant
+                since the Chrome Extension behavior defaults to the Chrome navigation bar
+                for new tabs. -->
+                <!--<div id="searchBox">
+                  <form action="https://google.com/search" id="searchForm">
+                    <i class="material-icons md-24">search</i>
+                    <div class="mdl-textfield mdl-js-textfield">
+                      <input class="mdl-textfield__input" type="text" id="search" name="q"
+                             autofocus="autofocus" autocomplete="off">
+                      <label class="mdl-textfield__label" for="search">Search Google...</label>
+                    </div>
+                  </form>
+                </div>-->
+            </div>
         </div><!-- End of Date/Time/Search -->
         <div class="mdl-grid">
-          <div class="mdl-cell mdl-cell--4-col cell"><!-- Start of 1st column of links -->
-            <h4 class="mdl-color-text--primary">Handled</h4>
-            <ul class="link-list-item mdl-list">
-              <li class="mdl-list__item">
-                <i class="material-icons mdl-list__item-icon md-18 md-dark">business</i>
-                <a href="https://simplyhandled.slack.com/">Slack</a>
-              </li>
-              <li class="mdl-list__item">
-                <i class="material-icons mdl-list__item-icon md-18 md-dark">note</i>
-                <a href="https://notion.so/">Notion</a>
-              </li>
-              <li class="mdl-list__item">
-                <i class="material-icons mdl-list__item-icon md-18 md-dark">work</i>
-                <a href="https://app.gusto.com/login">Gusto</a>
-              </li>
-              <li class="mdl-list__item">
-                <i class="material-icons mdl-list__item-icon md-18 md-dark">view_column</i>
-                <a href="https://app.asana.com/">Asana</a>
-              </li>
-              <li class="mdl-list__item">
-                <i class="material-icons mdl-list__item-icon md-18 md-dark">code</i>
-                <a href="https://app.hubspot.com/">Hubspot</a>
-              </li>
-              <li class="mdl-list__item">
-                <i class="material-icons mdl-list__item-icon md-18 md-dark">phone</i>
-                <a href="https://handled.3cx.us/webclient">3CX Web Client</a>
-              </li>
-            </ul>
-          </div><!-- End of 1st column of links -->
-          <div class="mdl-cell mdl-cell--4-col cell"><!-- Start of 2nd column of links -->
-            <h4 class="mdl-color-text--primary">Communication</h4>
-              <li class="mdl-list__item">
-                <i class="material-icons mdl-list__item-icon md-18 md-dark">email</i>
-                <!-- For Gmail, you may need to edit the "u/0" portion of the URL if you are logged into multiple Google accounts -->
-                <a href="https://mail.google.com/">Handled Email</a>
-              </li>
-              <li class="mdl-list__item">
-                <i class="material-icons mdl-list__item-icon md-18 md-dark">calendar_today</i>
-                <a href="https://calendar.google.com/r">Handled Calendar</a>
-              </li>
-              <li class="mdl-list__item">
-                <i class="material-icons mdl-list__item-icon md-18 md-dark">cloud</i>
-                <a href="https://drive.google.com/">Google Drive</a>
-              </li>
-              <li class="mdl-list__item">
-                <i class="material-icons mdl-list__item-icon md-18 md-dark">camera_alt</i>
-                <a href="https://simplyhandled.slack.com/">Zoom</a>
-              </li>
-            </ul>
-            <h4 class="mdl-color-text--primary">Team</h4>
-            <ul class="link-list-item mdl-list">
-              <li class="mdl-list__item">
-                <i class="material-icons mdl-list__item-icon md-18 md-dark">ballot</i>
-                <a href="https://github.com/handled">Handled GitHub</a>
-              </li>
-              <li class="mdl-list__item">
-                <i class="material-icons mdl-list__item-icon md-18 md-dark">view_column</i>
-                <a href="https://app.zenhub.com/">ZenHub</a>
-              </li>
-            </ul>
-          </div><!-- End of 2nd column of links -->
-          <div class="mdl-cell mdl-cell--4-col cell"> <!-- Start of 3rd column of links -->
-            <h4 class="mdl-color-text--primary">Career</h4>
-            <ul class="link-list-item mdl-list">
-              <li class="mdl-list__item">
-                <i class="material-icons mdl-list__item-icon md-18 md-dark">business_center</i>
-                <a href="https://www.linkedin.com/">LinkedIn</a>
-              </li>
-              <li class="mdl-list__item">
-                <i class="material-icons mdl-list__item-icon md-18 md-dark">help</i>
-                <a href="https://www.stackoverflow.com/">Stack Overflow</a>
-              </li>
-              <li class="mdl-list__item">
-                <i class="material-icons mdl-list__item-icon md-18 md-dark">book</i>
-                <a href="https://www.medium.com/">Medium</a>
-              </li>
-            </ul>
-            <h4 class="mdl-color-text--primary">Other</h4>
-            <ul class="link-list-item mdl-list">
-              <li class="mdl-list__item">
-                <i class="material-icons mdl-list__item-icon md-18 md-dark">format_align_left</i>
-                <a href="https://jsonformatter.org/">JSON Formatter</a>
-              </li>
-              <li class="mdl-list__item">
-                <i class="material-icons mdl-list__item-icon md-18 md-dark">sentiment_satisfied_alt</i>
-                <a href="https://www.reddit.com/">Reddit</a>
-              </li>
-              <li class="mdl-list__item">
-                <i class="material-icons mdl-list__item-icon md-18 md-dark">gif</i>
-                <a href="https://www.giphy.com">Giphy</a>
-              </li>
-            </ul>
-          </div><!-- End of 3rd column of links -->
+            <div class="mdl-cell mdl-cell--4-col cell"><!-- Start of 1st column of links -->
+                <h4 class="mdl-color-text--primary">Handled</h4>
+                <ul class="link-list-item mdl-list">
+                    <li class="mdl-list__item">
+                        <i class="material-icons mdl-list__item-icon md-18 md-dark">note</i>
+                        <a href="https://notion.so/">Notion</a>
+                    </li>
+                    <li class="mdl-list__item">
+                        <i class="material-icons mdl-list__item-icon md-18 md-dark">work</i>
+                        <a href="https://app.gusto.com/login">Gusto</a>
+                    </li>
+                    <li class="mdl-list__item">
+                        <i class="material-icons mdl-list__item-icon md-18 md-dark">view_column</i>
+                        <a href="https://app.asana.com/">Asana</a>
+                    </li>
+                    <li class="mdl-list__item">
+                        <i class="material-icons mdl-list__item-icon md-18 md-dark">code</i>
+                        <a href="https://app.hubspot.com/">Hubspot</a>
+                    </li>
+                    <li class="mdl-list__item">
+                        <i class="material-icons mdl-list__item-icon md-18 md-dark">work</i>
+                        <a href="https://app.wheniwork.com/">WhenIWork</a>
+                    </li>
+                    <li class="mdl-list__item">
+                        <i class="material-icons mdl-list__item-icon md-18 md-dark">phone</i>
+                        <a href="https://handled.3cx.us:5001/webclient">3CX Web Client</a>
+                    </li>
+                </ul>
+                <h4 class="mdl-color-text--primary">Team</h4>
+                <ul class="link-list-item mdl-list">
+                    <li class="mdl-list__item">
+                        <i class="material-icons mdl-list__item-icon md-18 md-dark">ballot</i>
+                        <a href="https://github.com/handled">Handled GitHub</a>
+                    </li>
+                    <li class="mdl-list__item">
+                        <i class="material-icons mdl-list__item-icon md-18 md-dark">view_column</i>
+                        <a href="https://app.zenhub.com/">ZenHub</a>
+                    </li>
+                </ul>
+            </div><!-- End of 1st column of links -->
+            <div class="mdl-cell mdl-cell--4-col cell"><!-- Start of 2nd column of links -->
+                <h4 class="mdl-color-text--primary">Communication</h4>
+                <li class="mdl-list__item">
+                    <i class="material-icons mdl-list__item-icon md-18 md-dark">business</i>
+                    <a href="https://simplyhandled.slack.com/">Slack</a>
+                </li>
+                <li class="mdl-list__item">
+                    <i class="material-icons mdl-list__item-icon md-18 md-dark">email</i>
+                    <!-- For Gmail, you may need to edit the "u/0" portion of the URL if you are logged into multiple Google accounts -->
+                    <a href="https://mail.google.com/">Handled Email</a>
+                </li>
+                <li class="mdl-list__item">
+                    <i class="material-icons mdl-list__item-icon md-18 md-dark">calendar_today</i>
+                    <a href="https://calendar.google.com/r">Handled Calendar</a>
+                </li>
+                <li class="mdl-list__item">
+                    <i class="material-icons mdl-list__item-icon md-18 md-dark">cloud</i>
+                    <a href="https://drive.google.com/">Google Drive</a>
+                </li>
+                <li class="mdl-list__item">
+                    <i class="material-icons mdl-list__item-icon md-18 md-dark">camera_alt</i>
+                    <a href="https://simplyhandled.slack.com/">Zoom</a>
+                </li>
+                </ul>
+                <h4 class="mdl-color-text--primary">DevOps</h4>
+                <ul class="link-list-item mdl-list">
+                    <li class="mdl-list__item">
+                        <i class="material-icons mdl-list__item-icon md-18 md-dark">search</i>
+                        <a href="https://app.logdna.com/e64572df06/logs/view">LogDNA</a>
+                    </li>
+                    <li class="mdl-list__item">
+                        <i class="material-icons mdl-list__item-icon md-18 md-dark">build</i>
+                        <a href="https://app.circleci.com/projects/project-dashboard/github/handled">CircleCI</a>
+                    </li>
+                    <li class="mdl-list__item">
+                        <i class="material-icons mdl-list__item-icon md-18 md-dark">cloud</i>
+                        <a href="https://444297783549.signin.aws.amazon.com/console">AWS Sandbox</a>
+                    </li>
+                    <li class="mdl-list__item">
+                        <i class="material-icons mdl-list__item-icon md-18 md-dark">cloud</i>
+                        <a href="https://999521930471.signin.aws.amazon.com/console">AWS Stage</a>
+                    </li>
+                    <li class="mdl-list__item">
+                        <i class="material-icons mdl-list__item-icon md-18 md-dark">cloud</i>
+                        <a href="https://331643073180.signin.aws.amazon.com/console">AWS Prod</a>
+                    </li>
+                    <li class="mdl-list__item">
+                        <i class="material-icons mdl-list__item-icon md-18 md-dark">cloud</i>
+                        <a href="https://rancher.handled.com/">Rancher</a>
+                    </li>
+                </ul>
+            </div><!-- End of 2nd column of links -->
+            <div class="mdl-cell mdl-cell--4-col cell"> <!-- Start of 3rd column of links -->
+                <h4 class="mdl-color-text--primary">Local Development</h4>
+                <ul class="link-list-item mdl-list">
+                    <li class="mdl-list__item">
+                        <i class="material-icons mdl-list__item-icon md-18 md-dark">code</i>
+                        <a href="http://localhost:8888/">Dozzle</a>
+                    </li>
+                    <li class="mdl-list__item">
+                        <i class="material-icons mdl-list__item-icon md-18 md-dark">play_circle_outline</i>
+                        <a href="http://localhost:4000/">Apollo</a>
+                    </li>
+                    <li class="mdl-list__item">
+                        <i class="material-icons mdl-list__item-icon md-18 md-dark">monetization_on</i>
+                        <a href="http://localhost:3015/login">Xero API Login</a>
+                    </li>
+                    <li class="mdl-list__item">
+                        <i class="material-icons mdl-list__item-icon md-18 md-dark">local_shipping</i>
+                        <a href="http://localhost:4200/quote/destination?referral=1&brand=U&origZip=62034&destZip=75215&movedate=2020-09-01&hometype=house&bedrooms=1&paying=self">
+                            Gemini Magic Link (localhost)</a>
+                    </li>
+                </ul>
+                <h4 class="mdl-color-text--primary">Other</h4>
+                <ul class="link-list-item mdl-list">
+                    <li class="mdl-list__item">
+                        <i class="material-icons mdl-list__item-icon md-18 md-dark">format_align_left</i>
+                        <a href="https://jsonformatter.org/">JSON Formatter</a>
+                    </li>
+                    <li class="mdl-list__item">
+                        <i class="material-icons mdl-list__item-icon md-18 md-dark">book</i>
+                        <a href="https://kubernetes.io/docs/reference/kubectl/cheatsheet/">kubectl Cheat Sheet</a>
+                    </li>
+                    <li class="mdl-list__item">
+                        <i class="material-icons mdl-list__item-icon md-18 md-dark">gif</i>
+                        <a href="https://www.giphy.com">Giphy</a>
+                    </li>
+                </ul>
+            </div><!-- End of 3rd column of links -->
         </div><!-- mdl-grid end -->
         <div id="notificationSnackbar" class="mdl-js-snackbar mdl-snackbar">
-          <div class="mdl-snackbar__text"></div>
-          <button class="mdl-snackbar__action" type="button">Dope</button>
+            <div class="mdl-snackbar__text"></div>
+            <button class="mdl-snackbar__action" type="button">Dope</button>
         </div>
-      </main>
-    </div>
-  </body>
+    </main>
+</div>
+</body>
 </html>
